@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Health Lover's Club">
+  <meta property="og:title" content="Health Lover's Club | Fitness, Nutrition & Wellness">
+  <meta property="og:description" content="Online workouts, Zumba, nutrition guidance and healthy habits.">
+  <meta property="og:type" content="website">
+  <meta name="description content="Join Health Lover's Club for online workout sessions, Zumba, nutrition guidance, weight management support and a healthy community. WhatsApp: +91 94649 41737.">
+  <title>Health Lover's Club | Online Workout, Zumba & Nutrition Guidance</title>
+  <style>
+    :root {
+      --green:#167a50; --green-dark:#0d5136; --mint:#eaf7ef;
+      --ink:#17251e; --muted:#65736b; --orange:#f2a43a; --white:#fff;
+      --shadow:0 16px 45px rgba(19,65,43,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fbfdfb}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e8efe9}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.05rem}
+    .logo{width:44px;height:44px;border-radius:14px;background:var(--green);color:white;display:grid;place-items:center;font-size:24px}
+    .brand small{display:block;color:var(--muted);font-size:.68rem;font-weight:600;letter-spacing:1.5px}
+    nav{display:flex;gap:25px;align-items:center;font-size:.92rem;font-weight:700}
+    nav a:hover{color:var(--green)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:#fff;padding:13px 21px;border-radius:999px;font-weight:800;border:0;cursor:pointer;transition:.2s}
+    .btn:hover{background:var(--green-dark);transform:translateY(-2px)}
+    .btn.light{background:white;color:var(--green)}
+    .menu{display:none;background:none;border:0;font-size:27px}
+    .hero{padding:82px 0 72px;background:radial-gradient(circle at 85% 20%,#d8f1df 0,transparent 30%),linear-gradient(135deg,#f0faf2,#fff 65%)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+    .eyebrow{color:var(--green);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(2.7rem,5.5vw,4.7rem);line-height:1.04;letter-spacing:-2px;margin:15px 0 20px}
+    h1 span{color:var(--green)}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:590px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .outline{border:1.5px solid #b9d8c4;color:var(--green);background:transparent}
+    .hero-art{min-height:390px;border-radius:32px;background:linear-gradient(145deg,#167a50,#0c5035);position:relative;overflow:hidden;display:grid;place-items:center;box-shadow:var(--shadow)}
+    .hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.2);border-radius:50%}
+    .hero-art:before{width:330px;height:330px}.hero-art:after{width:450px;height:450px}
+    .hero-icon{font-size:125px;z-index:1;filter:drop-shadow(0 15px 18px #063b28)}
+    .art-note{position:absolute;z-index:2;bottom:24px;left:24px;right:24px;padding:17px 20px;border-radius:18px;background:rgba(255,255,255,.95);font-weight:800}
+    .art-note small{display:block;color:var(--muted);font-weight:500}
+    section{padding:76px 0}
+    .section-head{text-align:center;max-width:680px;margin:0 auto 38px}
+    h2{font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.15;margin:10px 0 13px;letter-spacing:-1px}
+    .section-head p,.muted{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:#fff;border:1px solid #e9f0eb;border-radius:22px;padding:27px;box-shadow:0 8px 28px rgba(20,60,40,.045)}
+    .card .ico{width:52px;height:52px;border-radius:16px;background:var(--mint);display:grid;place-items:center;font-size:26px}
+    .card h3{margin:17px 0 7px;font-size:1.2rem}
+    .card p{color:var(--muted);margin:0}
+    .about{background:var(--mint)}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}
+    .about-panel{background:#fff;border-radius:28px;padding:35px;box-shadow:var(--shadow)}
+    .check{display:flex;gap:12px;margin:15px 0;color:#34463b}
+    .check b{color:var(--green)}
+    .schedule{background:#fff}
+    .schedule-box{max-width:820px;margin:auto;border-radius:25px;padding:30px;background:#f5faf6;border:1px solid #e3eee6;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .time{padding:20px;background:white;border-radius:18px}
+    .time strong{display:block;color:var(--green);font-size:1.25rem}
+    .cta{background:var(--green-dark);color:white;text-align:center;padding:65px 20px}
+    .cta p{color:#d6eadf;max-width:620px;margin:0 auto 25px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .contact-card{padding:28px;border-radius:22px;background:#fff;border:1px solid #e9f0eb}
+    .contact-card a{color:var(--green);font-weight:800}
+    footer{background:#092f21;color:#d8e9df;padding:28px 0;font-size:.9rem}
+    .foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){
+      nav{display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:20px 5%;flex-direction:column;align-items:flex-start;border-bottom:1px solid #e8efe9}
+      nav.open{display:flex}.menu{display:block}.nav>.btn{display:none}
+      .hero{padding:55px 0}.hero-grid,.about-grid{grid-template-columns:1fr;gap:30px}
+      .hero-art{min-height:300px}.cards{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:540px){.cards,.schedule-box,.contact-grid{grid-template-columns:1fr}section{padding:58px 0}h1{letter-spacing:-1px}.hero-art{min-height:270px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="logo">♥</span><span>HEALTH LOVER'S CLUB<small>MOVE • NOURISH • TRANSFORM</small></span></a>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#programs">Programs</a><a href="#schedule">Schedule</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="https://wa.me/919464941737?text=Hello%20Health%20Lover%27s%20Club%2C%20I%20want%20to%20join.">Join the Club</a>
+    <button class="menu" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Your health. Your journey. Our community.</div>
+        <h1>Small steps.<br><span>Healthier you.</span></h1>
+        <p class="lead">Build healthy habits with guided workouts, practical nutrition guidance and a supportive community. Start where you are and keep moving forward.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/919464941737?text=Hello%2C%20I%20want%20to%20know%20about%20Health%20Lover%27s%20Club.">Join on WhatsApp ↗</a>
+          <a class="btn outline" href="#programs">Explore Programs</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Healthy lifestyle illustration">
+        <div class="hero-icon">🏃‍♀️</div>
+        <div class="art-note">A healthier lifestyle starts today.<small>Fitness • Nutrition • Consistency • Community</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What we offer</div><h2>Make healthy living part of your routine</h2><p>Simple, supportive guidance to help you work toward your personal wellness goals.</p></div>
+      <div class="cards">
+        <article class="card"><div class="ico">💪</div><h3>Daily Workout Sessions</h3><p>Enjoy guided fitness, Zumba and movement sessions designed to help you stay active and consistent.</p></article>
+        <article class="card"><div class="ico">🥗</div><h3>Nutrition Guidance</h3><p>Learn balanced eating, portion awareness and practical food habits that fit everyday life.</p></article>
+        <article class="card"><div class="ico">📊</div><h3>Progress Monitoring</h3><p>Track your progress, review your routine and make realistic adjustments along the way.</p></article>
+        <article class="card"><div class="ico">🎯</div><h3>Weight Management</h3><p>Build sustainable habits for weight management, strength and overall wellbeing.</p></article>
+        <article class="card"><div class="ico">🤝</div><h3>Healthy Community</h3><p>Stay motivated with group encouragement, shared experiences and positive accountability.</p></article>
+        <article class="card"><div class="ico">🌱</div><h3>Personal Guidance</h3><p>Get guidance to help you set practical goals and create a routine you can maintain.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="eyebrow">About our club</div><h2>Health is not a destination. It's a daily practice.</h2>
+        <p class="muted">Health Lover's Club is a wellness community built around movement, mindful nutrition and consistency. We believe progress comes from small actions repeated every day—not from shortcuts.</p>
+        <a class="btn" href="https://wa.me/919464941737?text=Please%20share%20membership%20details.">Ask about membership</a>
+      </div>
+      <div class="about-panel">
+        <h3>Our approach</h3>
+        <div class="check"><b>✓</b><span>Encourage regular physical activity at your own level.</span></div>
+        <div class="check"><b>✓</b><span>Promote balanced meals and sustainable nutrition habits.</span></div>
+        <div class="check"><b>✓</b><span>Celebrate consistency and progress—not perfection.</span></div>
+        <div class="check"><b>✓</b><span>Create a friendly environment where members motivate one another.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule" id="schedule">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Stay active</div><h2>Workout with the community</h2><p>Connect with the club to confirm the latest live-session timings and available batches.</p></div>
+      <div class="schedule-box">
+        <div class="time"><strong>Morning Sessions</strong><span class="muted">Connect with us for current batch timing and Zoom details.</span></div>
+        <div class="time"><strong>Evening Sessions</strong><span class="muted">Ask about evening workout and Zumba sessions.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap"><div class="eyebrow" style="color:#b9ebca">Your next step starts here</div><h2>Ready to make your health a priority?</h2><p>Message us on WhatsApp to learn about the club, workout sessions and membership options.</p><a class="btn light" href="https://wa.me/919464941737?text=Hello%20Health%20Lover%27s%20Club%2C%20I%20am%20interested%20in%20joining.">Chat on WhatsApp ↗</a></div>
+  </section>
+
+
+  <section id="register" style="background:#eaf7ef">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Join our community</div>
+        <h2>Register your interest</h2>
+        <p>Fill in your details. WhatsApp will open with your information ready to send to Health Lover's Club.</p>
+      </div>
+      <form id="joinForm" class="about-panel" style="max-width:650px;margin:auto">
+        <div style="display:grid;gap:7px;margin-bottom:16px">
+          <label for="fullName"><b>Full Name</b></label>
+          <input id="fullName" name="fullName" autocomplete="name" required placeholder="Enter your name" style="padding:14px;border:1px solid #cbdccf;border-radius:12px;font:inherit">
+        </div>
+        <div style="display:grid;gap:7px;margin-bottom:16px">
+          <label for="phone"><b>Phone Number</b></label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9+() -]{8,18}" required placeholder="Enter your mobile number" style="padding:14px;border:1px solid #cbdccf;border-radius:12px;font:inherit">
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px">
+          <div style="display:grid;gap:7px">
+            <label for="age"><b>Age</b></label>
+            <input id="age" name="age" type="number" min="1" max="110" required placeholder="Your age" style="width:100%;padding:14px;border:1px solid #cbdccf;border-radius:12px;font:inherit">
+          </div>
+          <div style="display:grid;gap:7px">
+            <label for="gender"><b>Gender</b></label>
+            <select id="gender" name="gender" required style="width:100%;padding:14px;border:1px solid #cbdccf;border-radius:12px;font:inherit;background:white">
+              <option value="">Select</option>
+              <option>Male</option><option>Female</option><option>Other</option><option>Prefer not to say</option>
+            </select>
+          </div>
+        </div>
+        <label style="display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:#65736b;margin-bottom:18px">
+          <input type="checkbox" required style="margin-top:5px">
+          <span>I agree to share these details with Health Lover's Club for membership enquiry and follow-up.</span>
+        </label>
+        <button class="btn" type="submit" style="width:100%;font:inherit">Submit Details on WhatsApp ↗</button>
+        <p id="formMessage" role="status" style="font-size:.85rem;color:#65736b;margin:12px 0 0">Your WhatsApp app will open. Please press Send there to share your details.</p>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Get in touch</div><h2>Let's begin your wellness journey</h2><p>Have a question about joining? Contact the club directly.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card"><h3>WhatsApp / Call</h3><p class="muted">Speak with Health Lover's Club</p><a href="https://wa.me/919464941737">+91 94649 41737</a></div>
+        <div class="contact-card"><h3>Join our community</h3><p class="muted">Ask about workout batches, nutrition guidance and membership.</p><a href="https://wa.me/919464941737?text=Please%20help%20me%20join%20Health%20Lover%27s%20Club.">Send a WhatsApp message ↗</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap foot"><span>© <span id="year"></span> Health Lover's Club. All rights reserved.</span><span>Move better • Eat mindfully • Live healthier</span></div></footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('joinForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const name = document.getElementById('fullName').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const age = document.getElementById('age').value;
+  const gender = document.getElementById('gender').value;
+  const message = [
+    "New Health Lover's Club Registration",
+    "Name: " + name,
+    "Phone: " + phone,
+    "Age: " + age,
+    "Gender: " + gender
+  ].join("\n");
+  const url = "https://wa.me/919464941737?text=" + encodeURIComponent(message);
+  window.open(url, "_blank", "noopener");
+  document.getElementById('formMessage').textContent =
+    "WhatsApp opened with your details. Please press Send to deliver the registration.";
+});
+</script>
+</body>
+</html>
